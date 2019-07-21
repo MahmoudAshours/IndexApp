@@ -118,6 +118,7 @@ class _LoginState extends State<Login> {
             width: MediaQuery.of(context).size.width,
             child: TextField(
               controller: _passwordController,
+              obscureText: true,
               cursorColor: themdata.primaryColor,
               decoration: InputDecoration(
                 errorText: _passValidation ? Messages.passwordError : null,
